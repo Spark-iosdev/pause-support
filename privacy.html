@@ -40,6 +40,7 @@ table{border-collapse:collapse;width:100%;margin:8px 0;font-size:14px}th,td{bord
 <li>公開すると選んだ項目だけ：目的、期日、止めたいアプリの種類（初期値はすべて非公開）</li>
 <li>受け取ったことの確認、そのセリフを採用したか（許可した人のセリフは届いた時点で採用）・見送ったか、ブロック。止め画面で実際に見たかどうかは送りません</li>
 <li>通報したとき：そのセリフの本文・書き手の名前・キャラ・通報の理由（安全確認の証拠として）</li>
+<li>リンクを作る・作り直すとき：IPアドレスを日ごとに変わる鍵で変換した値を、作りすぎを防ぐための回数の記録にだけ使います（IPアドレスそのものは保存しません。およそ2〜3日で消えます）</li>
 </ul>
 <p>リンクの鍵（トークン）はiPhoneのキーチェーンに保存し、サーバーには元に戻せない形（ハッシュ）でしか保存しません。投稿ページには、あなたが公開を選んだ項目だけが表示されます。</p>
 
@@ -136,6 +137,7 @@ table{border-collapse:collapse;width:100%;margin:8px 0;font-size:14px}th,td{bord
 <li>Only the items you choose to show: your purpose, your goal date and the kinds of apps you want to stop (all hidden by default)</li>
 <li>Confirmation that lines arrived, whether each line was used (lines from people you allowed are used on arrival) or skipped, and blocks. Whether you actually saw a line on the shield is never sent</li>
 <li>When you report a line: its text, the writer's name, the character and your reason (as evidence for the safety review)</li>
+<li>When you create or remake a link: a value converted from your IP address with a key that changes every day, used only to count link creations and stop abuse (the IP address itself is not stored; the value is gone in about 2–3 days)</li>
 </ul>
 <p>The link's key (token) is kept in your iPhone's Keychain; the server only stores a hash that can't be turned back into it. The writer page shows only the items you chose to show.</p>
 
